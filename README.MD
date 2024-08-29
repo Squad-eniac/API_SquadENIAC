@@ -1,6 +1,6 @@
 # WoMakers Code 🦋 - Bootcamp BackEnd - Python Django (SQUAD - ENIAC)
 
-🦋 Este repositório contém o Desafio APT desevolvido pelo Squad ENIAC durante o Bootcamp de Python & Django oferecido pela WoMakersCode. O objetivo deste bootcamp é fornecer uma base sólida em Python e Django, capacitando as mulheres a desenvolverem aplicações web completas 🦋
+🦋 Este repositório contém o Desafio API desevolvido pelo Squad ENIAC durante o Bootcamp de Python & Django oferecido pela WoMakersCode. O objetivo deste bootcamp é fornecer uma base sólida em Python e Django, capacitando as mulheres a desenvolverem aplicações web completas 🦋
 
 ## Desafio API - Consumo de API com Flask
 
@@ -10,8 +10,7 @@ O projeto será baseado em um servidor Flask com várias rotas para consumir os 
   
 #### 📚 Exercício  Rick e Morty:
 
-📋 **O seriado Rick and Morty é um desenho animado americano de comédia e ficção científica criado por Justin Roiland e Dan Harmon para o bloco de programação noturno Adult Swim, exibido no canal Cartoon Network.** **A série acompanha as perigosas aventuras do cientista louco Rick e seu neto Morty, que divide seu tempo entre a vida familiar e viagens interdimensionais. A série é inspirada em Back to the Future e Doctor Who.** **A API do Rick and Morty é uma API pública que contém informações sobre os personagens da série.** 
-📋 **A documentação da API pode ser encontrada em: https://rickandmortyapi.com/documentation/#rest**
+📋 **O seriado Rick and Morty é um desenho animado americano de comédia e ficção científica criado por Justin Roiland e Dan Harmon para o bloco de programação noturno Adult Swim, exibido no canal Cartoon Network.** **A série acompanha as perigosas aventuras do cientista louco Rick e seu neto Morty, que divide seu tempo entre a vida familiar e viagens interdimensionais. A série é inspirada em Back to the Future e Doctor Who.** **A API do Rick and Morty é uma API pública que contém informações sobre os personagens da série.** **A documentação da API pode ser encontrada em: https://rickandmortyapi.com/documentation/#rest**
 
 
 - 1️⃣. Criação da Rota de Localização:
