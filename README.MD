@@ -61,7 +61,7 @@ O projeto será baseado em um servidor Flask com várias rotas para consumir os 
 
 ### 🤝 Divisão das Tarefas
 
-A divisão foi realizada de forma que cada etapa fosse concluída antes do início da etapa seguinte. Dessa forma, as meninas com mais disponibilidade de tempo no início do projeto começaram pela primeira etapa, e assim por diante. Dividimos uma etapa para duas meninas.
+A divisão foi realizada de forma que cada etapa fosse concluída antes do início da etapa seguinte. Dessa forma, as meninas com mais disponibilidade de tempo no início do projeto começaram pela primeira etapa, e assim por diante.
 
 - 1️⃣. Criação da Rota de Localização: 
 - 2️⃣. Criação da Rota para listar os Episódios:
