@@ -63,7 +63,7 @@ O projeto será baseado em um servidor Flask com várias rotas para consumir os 
 
 A divisão foi realizada de forma que cada etapa fosse concluída antes do início da etapa seguinte. Dessa forma, as meninas com mais disponibilidade de tempo no início do projeto começaram pela primeira etapa, e assim por diante.
 
-- 1️⃣. Criação da Rota de Localização: 
+- 1️⃣. Criação da Rota de Localização: Marina
 - 2️⃣. Criação da Rota para listar os Episódios:
 - 3️⃣. Criação de rota para exibir o perfil da Localização:
 - 4️⃣. Criação de rota para exibir o perfil do Episódio:
