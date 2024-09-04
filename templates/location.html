@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div>
+    <h2>{{ location.name }}</h2>
+    <p class="lead"><strong>Tipo:</strong> {{ location.type }}</p>
+    <p class="lead"><strong>Dimensão:</strong> {{ location.dimension }}</p>
+</div>
+
+<hr class="my-4">
+
+<div>
+    <h3 class="h4 mb-4">Personagens que aparecem aqui:</h3>
+    <div class="row">
+        {% for resident in residents %}
+        <div class="col-sm-2 col-4 mb-4">
+            <a href="{{ url_for('get_profile', id=resident['id']) }}" style="text-decoration: none;">
+                <h6 class="h6">{{resident.name}}</h6>
+                <img src="{{resident.image}}" alt="{{resident.name}}" class="img-fluid img-thumbnail " />
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

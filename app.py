@@ -60,3 +60,27 @@ def get_episodes():
     
     return render_template("episodes.html", episodes=episodes_data['results'])
 
+@app.route('/location/<id>')
+def get_location(id):
+    url = f'https://rickandmortyapi.com/api/location/{id}'  
+    try:
+        response = urllib.request.urlopen(url)
+        data = response.read()
+        location_data = json.loads(data)
+    except Exception as e:
+        return f"Error fetching location: {e}"
+
+    residents = []
+
+    for resident_url in location_data.get('residents', []):
+        try:
+            resident_response = urllib.request.urlopen(resident_url)
+            residents.append(json.loads(resident_response.read()))
+        except Exception as err:
+            return f"Error fetching resident: {err}"
+
+    return render_template(
+        "location.html",
+        location=location_data,
+        residents=residents
+        )
