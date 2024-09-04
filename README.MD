@@ -76,7 +76,7 @@ A divisão foi realizada de forma que cada etapa fosse concluída antes do iníc
    - No terminal, navegue até o diretório raiz do projeto.
    - Crie um ambiente virtual com o comando:
      ```bash
-     python -m venv venv
+     python -m venv .venv
      ```
 
 2. **Ativar o Ambiente Virtual:**
