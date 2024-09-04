@@ -66,5 +66,37 @@ A divisão foi realizada de forma que cada etapa fosse concluída antes do iníc
 - 1️⃣. Criação da Rota de Localização: Marina
 - 2️⃣. Criação da Rota para listar os Episódios: Kassia
 - 3️⃣. Criação de rota para exibir o perfil da Localização:
-- 4️⃣. Criação de rota para exibir o perfil do Episódio:
+- 4️⃣. Criação de rota para exibir o perfil do Episódio: Ana Julia e 
 - 5️⃣. Adicionar Infos na página do perfil do Personagem:
+
+
+## 🔧 Como Executar o Projeto
+
+1. **Criar um Ambiente Virtual:**
+   - No terminal, navegue até o diretório raiz do projeto.
+   - Crie um ambiente virtual com o comando:
+     ```bash
+     python -m venv venv
+     ```
+
+2. **Ativar o Ambiente Virtual:**
+   - No Windows:
+     ```bash
+     venv\Scripts\activate
+     ```
+   - No macOS/Linux:
+     ```bash
+     source venv/bin/activate
+     ```
+
+3. **Instalar Dependências:**
+   - Com o ambiente virtual ativo, instale as dependências do projeto usando:
+     ```bash
+     pip install -r requirements.txt
+     ```
+
+4. **Executar o Aplicativo:**
+   - Para iniciar o servidor Flask, execute o seguinte comando:
+     ```bash
+     flask --app app run
+     ```

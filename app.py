@@ -60,6 +60,20 @@ def get_episodes():
     
     return render_template("episodes.html", episodes=episodes_data['results'])
 
+@app.route('/episode/<id>')
+def get_episode(id):
+    url = f'https://rickandmortyapi.com/api/episode/{id}'  
+    try:
+        response = urllib.request.urlopen(url)
+        data = response.read()
+        episode_data = json.loads(data)
+        
+        print(episode_data)
+    except Exception as e:
+        return f"Error fetching episode: {e}"
+    
+    return render_template("episode.html", episode=episode_data)
+
 @app.route('/location/<id>')
 def get_location(id):
     url = f'https://rickandmortyapi.com/api/location/{id}'  
