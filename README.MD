@@ -82,11 +82,11 @@ A divisão foi realizada de forma que cada etapa fosse concluída antes do iníc
 2. **Ativar o Ambiente Virtual:**
    - No Windows:
      ```bash
-     venv\Scripts\activate
+     .venv\Scripts\activate
      ```
    - No macOS/Linux:
      ```bash
-     source venv/bin/activate
+     source .venv/bin/activate
      ```
 
 3. **Instalar Dependências:**
