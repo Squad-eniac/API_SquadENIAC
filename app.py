@@ -68,11 +68,22 @@ def get_episode(id):
         data = response.read()
         episode_data = json.loads(data)
         
-        print(episode_data)
+        character_urls = episode_data.get('characters', [])
+        characters = []
+
+        for char_url in character_urls:
+            try:
+                char_response = urllib.request.urlopen(char_url)
+                char_data = json.loads(char_response.read())
+                characters.append(char_data)
+            except Exception as e:
+                print(f"Error fetching character: {e}")
+
     except Exception as e:
         return f"Error fetching episode: {e}"
     
-    return render_template("episode.html", episode=episode_data)
+    return render_template("episode.html", episode=episode_data, characters=characters)
+
 
 @app.route('/location/<id>')
 def get_location(id):

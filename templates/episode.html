@@ -8,15 +8,20 @@
   <h2>{{ episode.name }}</h2>
   <p class="lead"><strong>Episódio:</strong> {{ episode.episode }}</p>
   <p class="lead"><strong>Data de Lançamento:</strong> {{ episode.air_date }}</p>
-  <p class="lead">Código: <strong> {{ episode.id }}</strong></p>
+  <p class="lead">Código: <strong>{{ episode.id }}</strong></p>
 </div>
 
 <hr class="my-4">
 
 <div>
   <h3 class="h4 mb-4">Personagens que aparecem neste episódio:</h3>
- 
-  <!-- TODO: Exibir a lista de personagens que aparecem no episódio aqui e linkar com a página do personagem -->
+  <ul class="list-unstyled">
+    {% for character in characters %}
+    <li>
+      <a href="/profile/{{ character.id }}">{{ character.name }}</a> - {{ character.status }}
+    </li>
+    {% endfor %}
+  </ul>
 </div>
 
 {% endif %}
