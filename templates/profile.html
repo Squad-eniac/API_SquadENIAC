@@ -1,12 +1,16 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<div class="row"> 
+<div class="row pt-5"> 
     <div class="col-sm-3 col-6">
         <img src="{{profile.image}}" alt="{{profile.name}}" class="img-fluid img-thumbnail" />
     </div>
-    <div class="col-sm-3 col-6">
-        <h1 class="h5">{{profile.name}}</h1>
+    <div class="col-sm-3 col-6 d-flex flex-column justify-content-between"> 
+        <h1 class="h3">{{profile.name}}</h1>
+        <p class="lead"><strong>Espécie: </strong>{{ profile.species }}</p>
+        <p class="lead"><strong>Gênero: </strong>{{ profile.gender }}</p>
+        <p class="lead"><strong>Localização: </strong>{{ profile.location.name }}</p>
+        <p class="lead"><strong>Origem: </strong>{{ profile.origin.name }}</p>
     </div> 
 </div>
 {% endblock %}
