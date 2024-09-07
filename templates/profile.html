@@ -9,8 +9,31 @@
         <h1 class="h3">{{profile.name}}</h1>
         <p class="lead"><strong>Espécie: </strong>{{ profile.species }}</p>
         <p class="lead"><strong>Gênero: </strong>{{ profile.gender }}</p>
-        <p class="lead"><strong>Localização: </strong>{{ profile.location.name }}</p>
-        <p class="lead"><strong>Origem: </strong>{{ profile.origin.name }}</p>
+        <p class="lead">
+            <strong>Localização: </strong>
+            <a href="{{ url_for('get_location', id=profile.location.url.split('/')[-1]) }}">
+                {{ profile.location.name }}
+            </a>
+        </p>
+        <p class="lead">
+            <strong>Origem: </strong>
+            <a href="{{ url_for('get_location', id=profile.origin.url.split('/')[-1]) }}">
+                {{ profile.origin.name }}
+            </a>
+        </p>
     </div> 
+</div>
+
+<div>
+    <h3 class="h4 mb-4">Episódios em que {{ profile.name }} aparece:</h3>
+    <ul class="list-unstyled">
+        {% for episode_url in profile.episode %}
+        <li>
+            <a href="{{ url_for('get_episode', id=episode_url.split('/')[-1]) }}">
+                Episódio {{ episode_url.split('/')[-1] }}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
 </div>
 {% endblock %}
