@@ -65,9 +65,9 @@ A divisão foi realizada de forma que cada etapa fosse concluída antes do iníc
 
 - 1️⃣. Criação da Rota de Localização: Marina
 - 2️⃣. Criação da Rota para listar os Episódios: Kassia
-- 3️⃣. Criação de rota para exibir o perfil da Localização: Fabiana
+- 3️⃣. Criação de rota para exibir o perfil da Localização: Fabiana e Carol
 - 4️⃣. Criação de rota para exibir o perfil do Episódio: Ana Julia e Angélica
-- 5️⃣. Adicionar Infos na página do perfil do Personagem: Laysa e
+- 5️⃣. Adicionar Infos na página do perfil do Personagem: Laysa e Rosana
 
 
 ## 🔧 Como Executar o Projeto
